@@ -130,7 +130,7 @@ function tampilStruk() {
     strukItem.innerHTML = "";
 
     keranjang.forEach(function(item) {
-        strukItem.innerHTML += `<li>${item.nama} x${item.qty} = Rp ${formatRupiah(item.subtotal)}</li>`;
+        strukItem.innerHTML += `<li><span>${item.nama} x${item.qty}</span><span>Rp ${formatRupiah(item.subtotal)}</span></li>`;
     });
 
     document.getElementById("struk-total").textContent = "Rp " + formatRupiah(total);
