@@ -361,3 +361,4 @@ window.setorModal = setorModal;
 window.tutupKasir = tutupKasir;
 window.tampilSaran = tampilSaran;
 window.cariHarga = cariHarga;
+window.tampilStruk = tampilStruk;
