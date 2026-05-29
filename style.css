@@ -124,3 +124,15 @@ td button:hover {
     font-weight: bold;
     color: #6c3fc5;
 }
+
+/* alignment struk */
+#struk-items li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 2px 0;
+}
+
+#struk-items {
+    padding-left: 0;
+}
