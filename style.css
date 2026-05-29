@@ -136,3 +136,13 @@ td button:hover {
 #struk-items {
     padding-left: 0;
 }
+
+#tampilan-struk p {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tampilan-struk h3,
+#struk-waktu {
+    text-align: center;
+}
