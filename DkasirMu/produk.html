@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Produk - DKasirMu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Manajemen Produk</h2>
+    <a href="index.html">← Kembali ke Kasir</a>
+
+    <!-- FORM TAMBAH PRODUK -->
+    <div id="form-produk">
+        <h3>Tambah / Edit Produk</h3>
+        <input type="text" id="input-nama" placeholder="Nama Produk">
+        <input type="number" id="input-harga" placeholder="Harga">
+        <button onclick="tambahProduk()">Simpan Produk</button>
+    </div>
+
+    <!--IMPORT CSV-->
+    <div id="import-csv">
+        <h3>Import dari CSV</h3>
+        <input type="file" id="file-csv" accept=".csv" onchange="importCSV(event)">
+    </div>
+
+    <!-- PENCARIAN -->
+    <div id="pencarian">
+        <input type="text" id="input-cari" placeholder="Cari produk...." oninput="cariProduk()">
+    </div>
+    
+    <!-- TABEL PRODUK -->
+    <div id="daftar-produk">
+        <h3>Daftar Produk</h3>
+        <table id="tabel-produk">
+            <thread>
+                <tr>
+                    <th>Nama</th>
+                    <th>Harga</th>
+                    <th>Aksi</th>
+                </tr>
+            </thread>
+            <tbody id="isi-tabel">
+                <!-- diisi JS -->
+            </tbody>
+        </table>
+    </div>
+
+    <script type="module" src="js/produk.js"></script>
+</body>
+</html>
