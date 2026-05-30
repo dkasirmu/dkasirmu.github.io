@@ -13,13 +13,7 @@ bukaDB().then(function(database) {
 
 // INISIALISASI PRODUK AWAL
 function inisialisasiProduk() {
-    const produkAwal = [
-        { nama: "indomie goreng", harga: 3500 },
-        { nama: "indomie kuah", harga: 3000 },
-        { nama: "teh botol", harga: 5000 },
-        { nama: "aqua 600ml", harga: 4000 },
-        { nama: "roti tawar", harga: 13500 },
-    ];
+    const produkAwal = [];
 
     const tx = db.transaction("produk", "readwrite");
     const store = tx.objectStore("produk");
@@ -34,7 +28,7 @@ function inisialisasiProduk() {
     });
 }
 
-// FORMAT ANGKA
+// CARI HARGA DARI INPUT NAMA
 function cariHarga() {
     const nama = document.getElementById("namaBarang").value.toLowerCase();
 
