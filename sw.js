@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dkasirmu-v1';
+const CACHE_NAME = 'dkasirmu-v2';
 
 const FILES_TO_CACHE = [
   '/',
@@ -6,6 +6,9 @@ const FILES_TO_CACHE = [
   '/produk.html',
   '/riwayat.html',
   '/style.css',
+  '/manifest.json',
+  '/icons/icon-192.png',
+  '/icons/icon-512.png',
   '/js/db.js',
   '/js/kasir.js',
   '/js/format.js',
