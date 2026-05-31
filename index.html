@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DKasirMu</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
 
@@ -54,5 +55,13 @@
     </div>
 
     <script type="module" src="js/kasir.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+                .then(() => console.log('Service Worker terdaftar'))
+                .catch((err) => console.log('Gagal:, err'));
+        }
+    </script>
 </body>
 </html>
+
