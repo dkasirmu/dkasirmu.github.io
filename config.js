@@ -1,6 +1,6 @@
 const CONFIG = {
     // Identitas Toko
-    namaToko: "Dhifa Store",
+    namaToko: "toko Dhifa",
     pemilik: "Dhifa",
     kontakWA: "6208995075777",
 
@@ -10,5 +10,5 @@ const CONFIG = {
     // Fitur (true = aktif, false = disembunyikan)
     fiturDiskon: false,
 
-    versiApp: "1.3"
+    versiApp: "1.5"
 };
